@@ -134,7 +134,7 @@ var uppercase = function(string){return isString(string) ? string.toUpperCase() 
 
 
 var manualLowercase = function(s) {
-  /* jshint bitwise: false */
+  /* jshint bitwise: false  its wrong*/
   return isString(s)
       ? s.replace(/[A-Z]/g, function(ch) {return String.fromCharCode(ch.charCodeAt(0) | 32);})
       : s;
